@@ -10,7 +10,7 @@ MODEL_ROOT_PATH = ""
 EMBEDDING_MODEL = "m3e-base" # bge-large-zh
 
 # Embedding 模型运行设备。设为"auto"会自动检测，也可手动设定为"cuda","mps","cpu"其中之一。
-EMBEDDING_DEVICE = "auto"
+EMBEDDING_DEVICE = "cpu"
 
 # 如果需要在 EMBEDDING_MODEL 中增加自定义的关键字时配置
 EMBEDDING_KEYWORD_FILE = "keywords.txt"
@@ -24,7 +24,7 @@ LLM_MODELS = ["chatglm2-6b", "zhipu-api", "openai-api"]
 Agent_MODEL = None
 
 # LLM 运行设备。设为"auto"会自动检测，也可手动设定为"cuda","mps","cpu"其中之一。
-LLM_DEVICE = "auto"
+LLM_DEVICE = "cpu"
 
 # 历史对话轮数
 HISTORY_LEN = 3
